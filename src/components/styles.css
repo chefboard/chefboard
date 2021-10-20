@@ -1,0 +1,20 @@
+.nav-tab {
+  position: fixed;
+  bottom: 0;
+  background: #fff;
+  width: 100vw;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: -1px 1px 5px 0px #000;
+}
+
+.nav-item {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
