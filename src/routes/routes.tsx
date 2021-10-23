@@ -1,8 +1,8 @@
 import { Route, BrowserRouter } from "react-router-dom";
 
-import Home from "./pages/Home";
-import Invoice from "./pages/Invoice";
-import Queue from "./pages/Queue";
+import Home from "../pages/Home";
+import Invoice from "../pages/Invoice";
+import Queue from "../pages/Queue";
 
 
 const Routes = () => {

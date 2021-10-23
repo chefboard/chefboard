@@ -1,7 +1,7 @@
 import {Link} from 'react-router-dom'
-import menu from "../assets/icons/menu.svg";
-import invoice from "../assets/icons/invoice.svg";
-import food from '../assets/icons/food.svg';
+import menu from "../../assets/icons/menu.svg";
+import invoice from "../../assets/icons/invoice.svg";
+import food from '../../assets/icons/food.svg';
 
 import './styles.css';
 
