@@ -1,10 +1,12 @@
 import "./index.css";
-import NavTab from "../../components/NavTab";
+import NavTab from "../../components/NavTab/NavTab";
 
 const App: React.FC = () => {
   return (
     <div className="App">
-      <div className="">Cardápio</div>  
+      <div className="">
+        <h1>Cardápio</h1>
+      </div>  
       <NavTab />
     </div>
   );

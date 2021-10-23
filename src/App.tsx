@@ -1,10 +1,13 @@
+import Routes from './routes/routes'
+import GlobalStyle from './styles/global'
 
-import Routes from './routes'
+const App: React.FC = () => 
 
-const App: React.FC = () => {
-  return (
+(
+  <>
     <Routes />
-  );
-};
+    <GlobalStyle/>
+  </>
+);
 
 export default App;
