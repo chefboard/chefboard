@@ -5,6 +5,8 @@ import Invoice from "../pages/Invoice";
 import Queue from "../pages/Queue";
 import Dashboard from "../pages/Dashboard";
 import Inventory from "../pages/Inventory";
+import Products from "../pages/Products";
+import Product from "../pages/Product";
 
 
 const Routes = () => {
@@ -15,6 +17,8 @@ const Routes = () => {
            <Route component={ Queue }  path="/fila" />
            <Route component={ Dashboard }  path="/dashboard" exact/>
            <Route component={ Inventory }  path="/dashboard/estoque" />
+           <Route component={ Products }  path="/dashboard/produtos" />
+           <Route component={ Product }  path="/dashboard/produto/:id" />
        </BrowserRouter>
    )
 }
