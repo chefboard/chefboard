@@ -1,6 +1,6 @@
 // import {Link} from 'react-router-dom'
 
-import {ContentBar, FilledBar} from  './styled';
+import {ContentBar, FilledBar, InventoryItemContainer} from  './styled';
 
 interface InventoryItemProps {
   item: any
@@ -8,12 +8,12 @@ interface InventoryItemProps {
 
 const InventoryItem: React.FC<InventoryItemProps> = ({item}) => {
   return (
-    <div className='InventoryItem'>
+    <InventoryItemContainer>
       <span>{item.name}</span>
       <ContentBar>
         <FilledBar quantity={item.quantity}/>
       </ContentBar>
-    </div>
+    </InventoryItemContainer>
   )
 }
 
