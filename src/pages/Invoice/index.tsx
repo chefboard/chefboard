@@ -1,7 +1,7 @@
 import "./index.css";
-import NavTab from "../../components/NavTab/NavTab";
+import NavTab from "../../components/NavBar";
 
-const App: React.FC = () => {
+const Invoice: React.FC = () => {
   return (
     <div className="App">
       <div className="">
@@ -12,4 +12,4 @@ const App: React.FC = () => {
   );
 };
 
-export default App;
+export default Invoice;
