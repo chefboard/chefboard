@@ -5,7 +5,7 @@ import food from '../../assets/icons/food.svg';
 
 import './styles.css';
 
-const NavTab: React.FC = () => {
+const NavBar: React.FC = () => {
   return <div className='nav-tab'>
     <Link to="/" className="nav-item">
       <img src={menu} alt="cardapio" width="35px" height="35px" />
@@ -19,4 +19,4 @@ const NavTab: React.FC = () => {
   </div>;
 }
 
-export default NavTab;
+export default NavBar;
