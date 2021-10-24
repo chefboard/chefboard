@@ -4,10 +4,11 @@ interface filledBarProps {
   quantity: number;
 }
 
-export const  InventoryItemContainer = styled.div`
-  width: 90%;
+export const  InventoryItemContainer = styled.li`
+  width: 100%;
   padding: 15px;
-  margin: 0 auto;
+  list-style: none;
+  text-transform: capitalize;
 `
 
 export const ContentBar = styled.div`
@@ -16,6 +17,7 @@ export const ContentBar = styled.div`
   position: relative;
   background-color: gray;
   border-radius: 10px;
+  margin-top: 5px;
 `
 
 export const FilledBar = styled.div<filledBarProps>`
