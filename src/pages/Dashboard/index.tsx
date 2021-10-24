@@ -1,4 +1,3 @@
-// import "./index.css";
 import Card from "../../components/Card";
 
 const Dashboard: React.FC = () => {
@@ -7,8 +6,9 @@ const Dashboard: React.FC = () => {
       <div className="">
         <h1>Dashboard</h1>
       </div> 
-      <Card />
-      <Card />
+      <Card title='produtos' link="/dashboard/produtos"/>
+      <Card title='estoque' link="/dashboard/estoque">
+      </Card>
     </div>
   );
 };
