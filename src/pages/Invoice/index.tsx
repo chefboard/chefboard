@@ -1,4 +1,3 @@
-import "./index.css";
 import NavTab from "../../components/NavBar";
 
 const Invoice: React.FC = () => {

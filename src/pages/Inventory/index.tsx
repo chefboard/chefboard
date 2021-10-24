@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 
-// import "./index.css";
 import InventoryItem from "../../components/InventoryItem";
 
 interface inventoryListProps {

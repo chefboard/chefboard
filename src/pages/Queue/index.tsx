@@ -1,4 +1,3 @@
-import "./index.css";
 import NavTab from "../../components/NavBar";
 
 const Queue: React.FC = () => {
