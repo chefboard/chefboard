@@ -14,5 +14,8 @@ export const Card = styled(Link)`
   color: #2e2e2e;  
 `
 
-
+export const Title = styled.h2`
+  font-size: 16px;
+  text-transform: capitalize;
+`
 

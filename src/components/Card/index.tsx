@@ -8,7 +8,7 @@ interface CardProps {
 const Card: React.FC<CardProps> = ({children, title, link}) => {
   return (
     <Styled.Card to={link}>
-      <h2>{title}</h2>
+      <Styled.Title>{title}</Styled.Title>
       {children}
     </Styled.Card>
   )
