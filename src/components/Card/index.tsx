@@ -1,10 +1,14 @@
-// import {Link} from 'react-router-dom'
-
 import * as Styled from './styled';
 
-const Card: React.FC = ({children}) => {
+interface CardProps {
+  title: string;
+  link: string;
+}
+
+const Card: React.FC<CardProps> = ({children, title, link}) => {
   return (
-    <Styled.Card>
+    <Styled.Card to={link}>
+      <h2>{title}</h2>
       {children}
     </Styled.Card>
   )
