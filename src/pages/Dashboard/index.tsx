@@ -1,14 +1,18 @@
 import Card from "../../components/Card";
+import { PageTitle, Content } from '../../styles/global'
+
 
 const Dashboard: React.FC = () => {
   return (
     <div className="Dashboard">
       <div className="">
-        <h1>Dashboard</h1>
-      </div> 
-      <Card title='produtos' link="/dashboard/produtos"/>
-      <Card title='estoque' link="/dashboard/estoque">
-      </Card>
+        <PageTitle>Dashboard</PageTitle>
+      </div>
+      <Content>
+        <Card title='produtos' link="/dashboard/produtos"/>
+        <Card title='estoque' link="/dashboard/estoque">
+        </Card>
+      </Content>
     </div>
   );
 };

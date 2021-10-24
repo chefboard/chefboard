@@ -1,10 +1,12 @@
 import NavTab from "../../components/NavBar";
+import { PageTitle } from '../../styles/global'
+
 
 const Queue: React.FC = () => {
   return (
     <div className="App">
       <div className="">
-        <h1>Fila</h1>
+        <PageTitle>Fila</PageTitle>
       </div>  
       <NavTab />
     </div>

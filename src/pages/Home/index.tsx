@@ -1,10 +1,12 @@
 import NavTab from "../../components/NavBar";
+import { PageTitle } from '../../styles/global'
+
 
 const Home: React.FC = () => {
   return (
     <div className="App">
       <div className="">
-        <h1>Cardápio</h1>
+        <PageTitle>Cardápio</PageTitle>
       </div>  
       <NavTab />
     </div>

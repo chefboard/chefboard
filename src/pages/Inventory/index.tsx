@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 
 import InventoryItem from "../../components/InventoryItem";
+import { PageTitle } from '../../styles/global'
+
 
 interface inventoryListProps {
   name: string;
@@ -22,7 +24,7 @@ const Inventory: React.FC = () => {
   return (
     <div className="Inventory">
       <div className="">
-        <h1>Estoque</h1>
+        <PageTitle>Estoque</PageTitle>
       </div> 
       {inventoryList && inventoryList.map(item => 
         <InventoryItem item={item}/>
