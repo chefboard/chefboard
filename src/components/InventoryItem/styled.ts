@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 interface filledBarProps {
-  quantity: number;
+  quantity: string;
 }
 
 export const  InventoryItemContainer = styled.li`
@@ -11,21 +11,47 @@ export const  InventoryItemContainer = styled.li`
   text-transform: capitalize;
 `
 
+export const QuantityContainer = styled.div`
+  display: flex;
+
+`
+
 export const ContentBar = styled.div`
-  width: 100%;
+  width: 70%;
   height: 15px;
   position: relative;
-  background-color: gray;
+  background-color: #C4C4C459;
   border-radius: 10px;
   margin-top: 5px;
+  margin-right: 8px;
 `
 
 export const FilledBar = styled.div<filledBarProps>`
-  width: ${(props) => props.quantity}%;
+  width: ${(props) => Number(props.quantity) < 100 ? props.quantity : 100}%;
   height: 100%;
   height: 100%;
-  background-color: yellow;
+  background-color: ${(props) => Number(props.quantity) <= 100 ? "#4DD363": "#f39c12"};
   border-radius: 10px;
 `
 
+export const Estimate = styled.p`
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  text-align: left;
+  color: #000000EB;
+  white-space: nowrap;
+`
+
+
+export const Percentage = styled.p`
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  text-align: left;
+  color: #9CA39B;
+  margin-right: 11px;
+`
 

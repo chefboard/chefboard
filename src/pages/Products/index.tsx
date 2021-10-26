@@ -13,9 +13,9 @@ const Products: React.FC = () => {
 
   useEffect(() => {
     const productsMock = [
-      {name: 'queijo', id: '1'},
-      {name: 'alface', id: '2'},
-      {name: 'tomate', id: '3'},
+      {name: 'Cheese Egg Burguer', id: '1', image: `${process.env.PUBLIC_URL}/image/Cheese-Egg-Burguer.png`, ingredients: [{name: 'queijo'}, {name: 'tomate'}], status: "ativo"},
+      {name: 'Cheese Egg Bacon Burguer', id: '2', image: `${process.env.PUBLIC_URL}/image/Cheese-Egg-Burguer.png`, status: "inativo"},
+      {name: 'Green Chili Bacon Burguer', id: '3', image: `${process.env.PUBLIC_URL}/image/Cheese-Egg-Burguer.png`},
     ]
     setProducts(productsMock)
   },[])

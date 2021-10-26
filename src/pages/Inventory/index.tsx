@@ -1,30 +1,33 @@
 import { useState, useEffect } from "react";
 
-import InventoryItem from "../../components/InventoryItem";
+import InventoryItem, { InventoryItemType } from "../../components/InventoryItem";
 import { PageTitle } from '../../styles/global'
-
-
-interface inventoryListProps {
-  name: string;
-  quantity: number;
-}
+// import api from '../../services/api'
 
 const Inventory: React.FC = () => {
-  const [inventoryList, setInventoryList] = useState<inventoryListProps[]>([])
+  const [inventoryList, setInventoryList] = useState<InventoryItemType[]>([])
   
   useEffect(() => {
-    const inventoryMock = [
-      {name: "queijo", quantity: 80},
-      {name: "tomate", quantity: 30},
-      {name: "cebola", quantity: 55}]
+    fetch('https://upxptycof6.execute-api.us-east-1.amazonaws.com/Dev/dynamodbmanager/estoque?ingredients=all', {
+    method: 'GET',
+    headers: {
+      'Accept': 'application/json'
+    },
+    }).then(response => response.json()).then(setInventoryList)
 
-    setInventoryList(inventoryMock)
+    fetch('https://upxptycof6.execute-api.us-east-1.amazonaws.com/Dev/dynamodbmanager/estoque?ingredients=all', {
+    method: 'GET',
+    headers: {
+      'Accept': 'application/json'
+    },
+    }).then(response => response.json()).then(console.log)
+
   },[])
 
   return (
     <div className="Inventory">
       <div className="">
-        <PageTitle>Estoque</PageTitle>
+        <PageTitle>Estoque de Ingredientes</PageTitle>
       </div> 
       {inventoryList && inventoryList.map(item => 
         <InventoryItem item={item}/>

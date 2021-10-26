@@ -13,6 +13,7 @@ export const NavBarContainer = styled.div`
   box-shadow: -1px 1px 5px 0px #000;
   left: 0;
   right: 0;
+  z-index: 2;
 `
 
 export const NavItem = styled(Link)` 

@@ -14,7 +14,7 @@ const Product: React.FC = () => {
 
   useEffect(() => {
     const ingredientsMock = [
-      {name: 'queijo', quantity: '10g'},
+      {name: 'queijo', quantity: '10g', },
       {name: 'alface', quantity: '20g'},
       {name: 'tomate', quantity: '30g'},
     ]
