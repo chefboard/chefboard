@@ -5,7 +5,7 @@ export const  ProductIngredientContainer = styled.div`
   padding: 15px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between
+  justify-content: space-between;
 `
 
 export const ProductName = styled.p`

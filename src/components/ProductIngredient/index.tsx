@@ -7,8 +7,8 @@ interface ProductIngredientProps {
 const ProductIngredient: React.FC<ProductIngredientProps> = ({ingredient}) => {
   return (
     <ProductIngredientContainer>
-      <ProductName>{ingredient.name}</ProductName>
-      <Quantity>{ingredient.quantity}</Quantity>
+      <ProductName>{ingredient.nome}</ProductName>
+      <Quantity>{ingredient.quantidade}</Quantity>
     </ProductIngredientContainer>
   )
 }

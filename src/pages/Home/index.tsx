@@ -22,15 +22,15 @@ const Home: React.FC = () => {
         {
           name: "hamburgers",
           products: [
-            {name: "Cheese Egg Burguer", price: 22.5, image: `${process.env.PUBLIC_URL}/image/Cheese-Egg-Burguer.png`},
-            {name: "Cheese Bacon Burguer DarkBurguer", price: 22.5,image: `${process.env.PUBLIC_URL}/image/Cheese-Egg-Burguer.png`}
+            {produtoId:1, name: "Cheese Egg Burguer", price: 22.5, image: `${process.env.PUBLIC_URL}/image/Cheese-Egg-Burguer.png`},
+            {produtoId:1, name: "Cheese Bacon Burguer DarkBurguer", price: 22.5,image: `${process.env.PUBLIC_URL}/image/Cheese-Egg-Burguer.png`}
           ]
         },
         {
           name: "sorvetes",
           products: [
-            {name: "Sorvete de Chocolate", price: 12.9, image: `${process.env.PUBLIC_URL}/image/Cheese-Egg-Burguer.png`},
-            {name: "Sorvete de Menta", price: 12.9, image: `${process.env.PUBLIC_URL}/image/Cheese-Egg-Burguer.png`}
+            {produtoId:1, name: "Sorvete de Chocolate", price: 12.9, image: `${process.env.PUBLIC_URL}/image/Cheese-Egg-Burguer.png`},
+            {produtoId:1, name: "Sorvete de Menta", price: 12.9, image: `${process.env.PUBLIC_URL}/image/Cheese-Egg-Burguer.png`}
           ]
         }
       ]

@@ -13,6 +13,6 @@ export const EditButton = styled.div`
   background: #C4C4C4;
   position: fixed;
   right: 25px;
-  bottom: 100px;
+  bottom: 20px;
 
 `

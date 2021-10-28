@@ -1,9 +1,10 @@
 import {Container, ProductImage, ProductInfo, ProductName, ProductPrice} from './styled'
 
 export interface Product {
-    name: string, 
-    price: number, 
-    image: string
+  produtoId: number,
+  name: string, 
+  price: number, 
+  image: string
 }
 
 interface ProductCardProps {
@@ -12,7 +13,7 @@ interface ProductCardProps {
 
 const ProductCard: React.FC<ProductCardProps> = ({product}) => {
   return (
-    <Container>
+    <Container to={`${product.produtoId}`}>
       <ProductImage src={product.image} alt="imagem do produto"/>
       <ProductInfo>
         <ProductName>{product.name}</ProductName>

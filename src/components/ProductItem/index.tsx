@@ -7,13 +7,13 @@ interface ProductItemProps {
 
 const ProductItem: React.FC<ProductItemProps> = ({product}) => {
   return (
-    <S.ProductItemContainer to={`/dashboard/produto/${product.id}`}>
+    <S.ProductItemContainer to={`/dashboard/produto/${product.pratoId}`}>
       <S.ProductImage src={product.image}/>
       <S.ProductInfo>
-        <S.ProductName>{product.name}</S.ProductName>
-        <S.ProductIngredients>{product.ingredients?.map((ingredient: any, index: number)=> {
-          if(index !== product.ingredients.length - 1){
-            return `${ingredient.name},`
+        <S.ProductName>{product.nome}</S.ProductName>
+        <S.ProductIngredients>{product?.ingredientes?.map((ingredient: any, index: number)=> {
+          if(index !== product.ingredientes.length - 1){
+            return `${ingredient.nome},`
           }
           return ingredient.name
         })}</S.ProductIngredients>
